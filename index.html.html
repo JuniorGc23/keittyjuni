@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para Keitty 💖</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="musica" autoplay loop>
+        <source src="/Yung Kai blue Live Performance  Genius Open Mic - Genius.mp3" type="audio/mp3">
+    </audio>
+    
+    <button onclick="document.getElementById('musica').play()">Click Aqui</button>
+
+    <input type="image">
+
+    <div class="container">
+        <div class="slide slide1">
+            <h1>Para mi persona especial, Keitty 💕</h1>
+            <p>Eres la luz en mi vida, la melodía que llena mis días de alegría.</p>
+            <button onclick="nextSlide()">Continuar</button>
+        </div>
+
+        <div class="slide slide2">
+            <h1>Siempre estaré aquí para ti 💫</h1>
+            <p>En cada risa, en cada sueño, en cada momento... aquí estaré.</p>
+            <button onclick="nextSlide()">Continuar</button>
+        </div>
+
+        <div class="slide slide3">
+            <h1>Solo tú y yo, en nuestra historia infinita 💖</h1>
+            <p>Gracias por ser mi inspiración, mi refugio y mi felicidad.</p>
+            <img src="/WhatsApp Image 2025-03-21 at 18.29.31.jpeg" class="imagen-reducida"
+        
+    </div>
+    
+    <script>
+        let currentSlide = 0;
+        function nextSlide() {
+            let slides = document.querySelectorAll('.slide');
+            if (currentSlide < slides.length - 1) {
+                slides[currentSlide].style.opacity = '0';
+                currentSlide++;
+                slides[currentSlide].style.opacity = '1';
+            }
+        }
+    </script>
+</body>
+</html>
